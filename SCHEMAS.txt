@@ -1,0 +1,82 @@
+appuser
+----------------
+id
+username
+firstname
+lastname
+email
+phone
+password
+isActive
+List<Roles>
+
+
+PersonalDetails
+----------------
+aADhar
+panCardNumber
+Set<BankDetails> bankDetails
+
+
+Address
+-----------
+lineOne
+lineTwo
+city
+state
+picode
+landmark
+AppUser
+
+BankDetails
+------------
+accHolderName
+bankName
+bankBranchName
+bankState
+ifscCode
+AppUser appUser;
+
+
+Property
+---------------
+property_id
+AppUser appUser
+deposit_amount bigint(20) 
+BankDetails bankDetails
+city varchar(255) 
+house_number varchar(255) 
+locality varchar(255) 
+pin_code int(11) 
+society_name varchar(255) 
+state varchar(255) 
+property_maintenance_cost bigint(20) 
+property_name varchar(255) 
+property_type varchar(255) 
+rent_amount bigint(20) 
+rent_due_date
+isActive
+isVarified
+
+PropertyOtherDetails
+-------------
+id
+rentAggrement
+property_papers
+Property property;
+
+
+Owner_Tenant
+-----------
+id;
+propertyId
+ownerId
+tenantId
+rentStartDate;
+
+FavourateList
+------------
+id
+propertyId;
+AppUser appUser
+isFavourate;
